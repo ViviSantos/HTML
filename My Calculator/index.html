@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/copy.css" rel="stylesheet">
+        <meta name="author" content="RG">
+        <meta charset="utf-8">
+        <script src="script/script1.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h3>Lab 7: JavaScript Arithmetic Operator</h3>
+        </header>
+            <form name="SumMachine" action='' method='GET'>
+                <fieldset>
+                    <legend>My calculator</legend>
+                    <textarea name="output" id="sumplace" rows="3" cols="25" ></textarea>
+                </fieldset> 
+                <fieldset>
+                    <legend>Input</legend>
+                    <p>Operands:
+                    <input type="text" id="inp1" name="fname">
+                    <input type="text" id="inp2" name="fname"></p>
+                    <p>Operator:
+                    <input type="button" name="submit" id= "bplus" value="+" onclick="addValue()">                
+                    <input type="button" name="subtration" id= "bplus" value="&times" onclick="multValue()">
+                    <input type="button" name="division" id= "bplus" value=":" onclick="divValue()">
+                    <input type="button" name="clear" id= "bclear" value="clear" onclick="clearValue()"></p>
+                </fieldset>              
+            </form>
+        <footer>
+            <p>Copyright 2021, Viviane Santos </p>
+            <div id="dateNow">11/8/2021<br />2:45:12 p.m.</div>
+        </footer>
+    </body>
+</html>

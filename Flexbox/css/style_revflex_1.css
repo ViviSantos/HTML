@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+
+/*
+Author:   Viviane M Santos
+Date:     2021-02-02    
+
+Filename: style.css
+*/
+
+
+/* 
+    CSS used in all sizes display 
+*/
+body{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: flex; 
+    flex-flow: row wrap;
+}
+header{
+    padding: 20px;
+    height: 40px;
+}
+nav{
+    background-color: burlywood;
+    padding: 20px;
+    text-align: center;
+    min-height: 40px;
+}
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    list-style-image: none;
+    padding-top: 12px;
+}
+article{
+    background-color: cadetblue;
+    padding: 20px;
+    text-align: center;
+    display: flex; 
+    flex-flow: row wrap; 
+ }
+aside{
+    background-color: crimson;
+    padding: 20px;   
+}
+.content{
+    display: flex; 
+    flex-flow: row wrap;
+}
+
+.feature{
+    background-color: chartreuse;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    /*flex: 1 1 100px*/
+ }
+ 
+footer{
+    background-color: lightblue;
+    color: white;
+    padding: 20px;
+    height: 40px;
+}
+
+/* 
+   Mobile Styles
+*/
+
+@media only screen and (min-width:0px) and (max-width:480px){ 
+    header {
+        background-color: rgb(253, 138, 6);
+        flex: 2 1 200px;
+    }
+    nav{
+        flex: 2 1 200px;
+    }
+    aside{
+        display: none;
+    }
+
+    .feature{
+        flex: 2 1 200px;
+        width: 370px;
+    }
+    li{
+        padding: 3px;
+        display: block;
+        list-style-type:none;
+     }
+    footer{
+        flex: 2 1 200px;
+    }
+}
+/* 
+   Tablet Styles
+*/
+@media only screen and (min-width:481px) and (max-width:768px){ 
+    header {
+        background-color: rgb(240, 74, 176);
+        flex: 3 1 500px;
+    }
+    nav{
+        flex: 3 1 500px;
+    }
+
+    li{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding: 3px;
+        display: block;
+        list-style-type:none;
+    }
+    .content{
+        display: flex;
+        flex-flow: row; 
+        width: 100%; 
+    }
+    article{
+        width: 66%;
+    }
+    .feature{
+        flex: 1 1 100px;
+        width: 35%;
+          
+    }
+    .feature:last-of-type{
+        width: 79%;
+    }
+    aside{
+        flex: 1 1 50px;
+        width: 34%;
+    }
+    footer{
+        flex: 3 1 500px;
+    }
+    
+    
+}
+/* 
+   Desktop Styles: 
+*/
+@media only screen and (min-width:769px)  { 
+    header {
+        background-color: rgb(8, 29, 221);
+        flex: 3 1 500px
+    }
+    nav{
+        flex: 3 1 500px
+    }
+    li{
+        padding: 80px;
+        display: inline;
+        list-style-type:none;
+    }
+    .content{
+        display: flex;
+        flex-flow: row; 
+        width: 100%;  
+        height: 300px;
+    }
+    article{
+        width: 66%;
+    }
+    .feature{
+        flex: 1 1 100px;
+        width: 25%;  
+    }
+    
+    aside{
+        flex: 1 1 50px;
+        width: 34%;
+    }
+    footer{
+        flex: 3 1 500px;
+    }
+ }
+
+
+
+
+
+ 

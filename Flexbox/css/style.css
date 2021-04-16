@@ -1,0 +1,152 @@
+@charset "utf-8";
+
+
+/*
+Author:   Viviane M Santos
+Date:     2021-02-02    
+
+Filename: style.css
+*/
+
+
+/* 
+    CSS used in all sizes display 
+*/
+body{
+    
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+header{
+    padding: 20px;
+    height: 40px;
+}
+nav{
+    background-color: burlywood;
+    padding: 20px;
+    text-align: center;
+    display: flexbox;
+    min-height: 40px;
+}
+a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    list-style-image: none;
+    padding-top: 12px;
+}
+article{
+    background-color: cadetblue;
+    padding: 20px;
+    text-align: center;
+ }
+aside{
+    background-color: crimson;
+    padding: 20px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.content{
+    display: grid;
+    height: 300px;
+}
+
+.feature{
+    background-color: chartreuse;
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    float: left;
+    text-align: center;
+ }
+ 
+footer{
+    background-color: lightblue;
+    color: white;
+    padding: 20px;
+    height: 40px;
+}
+
+/* 
+   Mobile Styles
+*/
+
+@media only screen and (min-width:0px) and (max-width:480px){ 
+    header {
+        background-color: rgb(253, 138, 6);
+    }
+    aside{
+        display: none;
+    }
+    .content{
+        grid-template-columns: 100%;
+    }
+    li{
+        padding: 3px;
+        display: block;
+        list-style-type:none;
+     }
+    .feature{
+        width: 90%;
+    }
+}
+/* 
+   Tablet Styles
+*/
+@media only screen and (min-width:481px) and (max-width:768px){ 
+    header {
+        background-color: rgb(240, 74, 176);
+    }
+    li{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding: 3px;
+        display: block;
+        list-style-type:none;
+    }
+    aside{
+        display: block;
+    }
+    .content{
+        grid-template-columns: 80% 20%;
+    }
+    .feature{
+        width: 27%;
+    }
+    .feature:last-of-type{
+        width: 60%;
+    }
+    
+    
+}
+/* 
+   Desktop Styles: 
+*/
+@media only screen and (min-width:769px)  { 
+    header {
+        background-color: rgb(8, 29, 221);
+    }
+    li{
+        padding: 80px;
+        display: inline;
+        list-style-type:none;
+    }
+    aside{
+        display: block;
+    }
+    .content{
+        grid-template-columns: 80% 20%;
+    }
+    .feature {
+        width: 27%;
+    }
+ }
+
+
+
+
+
+ 

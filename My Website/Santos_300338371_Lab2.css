@@ -1,0 +1,67 @@
+
+html { 
+    
+    background-color: white;
+}
+nav{
+    width: 8%;
+    font-weight: bold;
+    float: right;
+}
+
+body > header img {
+	width: 20%;
+	float: left;
+    border: 2px solid black;
+    
+}
+    
+.one{
+    padding: -5px 2px 2px 2px;
+    background-color: rgb(139, 130, 150);
+    text-align: left;
+   
+}
+
+article.one ul li:first-of-type {
+    list-style-image: url(rsz_email.png);
+}
+article.one ul li:last-of-type {
+    list-style-image: url(rsz_1rsz_phone.png);
+}
+
+ h1{
+    background-color: burlywood;
+    
+}
+
+.two ol {
+    list-style-type: upper-roman;
+}
+body {
+
+    width: 595px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    margin: auto;
+    position: relative;
+    top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 50px 100px 50px 100px;
+    color: black;
+
+}
+header{
+        top: -100px;
+        padding: auto;
+} 
+ section{
+     padding: auto;
+}  
+footer {
+    width: 100%;
+    min-height: 10px;
+    padding:auto;
+    text-align: center;
+    background-color: teal;
+}

@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/*
+   New Perspectives on HTML5 and CSS3, 8th Edition
+   Tutorial 3
+   Case Problem 1
+   
+   Layout styles for Slate and Pencil Tutoring
+   Author: Viviane Ma Santos
+   Date:   2021_02_18
+   
+   Filename: sp_layout.css
+
+*/
+
+/* Window and Body Styles */
+
+html{
+    height: 100%;
+}
+
+body{
+    width:95%;
+    max-width: 960px;
+    min-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 100%;
+    display: grid;
+}
+
+img{
+   display: block;
+}
+
+/* CSS Grid Styles */
+
+body{
+   grid-template-columns: repeat(4, 1fr);
+}
+
+img#logo{
+   grid-column-start: 1;
+   grid-column-end: 4;
+   width: 100%;
+}
+
+nav.horizontal{
+   grid-column-start: 1;
+   grid-column-end: 5;
+}
+
+footer{
+   grid-column-start: 1;
+   grid-column-end: 5;
+}
+
+aside{
+   grid-column-start: 1;
+   grid-column-end: 3;
+}
+
+aside:nth-of-type(even){
+   grid-column-start: 3;
+   grid-column-end: 5;
+   margin: 10px 10px;
+}
+
+/* Horizontal Navigation List Styles */
+
+nav.horizontal ul.row li{
+   width: 12.5%;
+   float: left;
+   text-align: center;
+}
+
+nav.horizontal ul.row li a{
+   display: block;
+}
+
+/* Section Styles */
+
+section img{
+   width: 50%;
+   margin: 0px auto;
+}
+
+section p{
+   width: 70%;
+   margin: 0px auto;
+}
+
+
+/* Customer Comment Styles */
+
+aside{
+   width: 75%;
+   padding-bottom: 30px;
+}
+
+aside:nth-of-type(odd){
+    justify-self: end;
+    margin: 10px 10px;
+}
+
+aside img{
+   float: left;
+   width: 20%;
+}
+
+aside p{
+   float: left;
+   width: 75%;
+   margin-left: 5%;
+}
+
